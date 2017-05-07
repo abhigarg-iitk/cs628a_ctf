@@ -1,0 +1,3 @@
+This question is based on SQL Injection. On trying some pattern matching queries, for example LIKE "cs628a{%", we get to know that the given flag is not in
+the reviews table and we try getting the other column names from sqlite_master table. This tell us that there is another director column which contains the flag.
+We start matching patterns by running script (also in this directory) and flag is there on the screen ( NOTE:- Run the script using python -W ignore )

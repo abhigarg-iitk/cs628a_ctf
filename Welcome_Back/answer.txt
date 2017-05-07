@@ -1,0 +1,4 @@
+The main point to notice in this was that offset was declared as char and not as int, this took a lot of time, once this was realized then the
+question was a simple one as the overflow directly lead us to the location of got and we replaced it with the address of system. We tried to do
+this using pwntools but we were not able to debug it using gdb hence we wrote the input to the executable in a file since we could debug it with gdb.
+We are attaching the txt file.

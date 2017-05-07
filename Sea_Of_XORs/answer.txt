@@ -1,0 +1,3 @@
+We had a hunch that the starting of the flag would be cs628a{ on xoring lead to the string "Hi Stud" which we expanded to "Hi Students" which lead to
+discovering more letter of the flag. Then we tried to guess the length of the key which then lead more english words which we completed and found the key
+finally

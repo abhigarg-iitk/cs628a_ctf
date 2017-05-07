@@ -1,0 +1,8 @@
+Really the maser challenge! On inspecting the page source, we get two random strings. Using base64 encoding, we get 13 X 13 = 169 for the top string
+and some ~~~~.~~.~~ string for the second one. Using some standard ciphes on the second string, ROT13 worked fine and gave r3G15T3r.tar.gz.
+Downloading this tar.gz file from the URL gave us r3G15T3r.html file which when passed into URL gave us register interface. Now admin registration was
+not possible, so we used mysql truncating and registered using "admin " username. Now we get login access to team review submission. SQL injection wasn't
+easy because of input sanitization but URL encoding quotes and passing the sql commands using referer value in header worked. Using the techniques
+on blind SQL injections using conditional errors in MySQL and checking the characters of db name one by one, we get the flag (script provided with
+the zip file)
+

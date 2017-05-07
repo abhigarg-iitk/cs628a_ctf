@@ -1,0 +1,2 @@
+This problem involved manipulating the http header fields to complete 5 stages, which involved setting cookie, user-agent, referer, dnt and the 
+X-UIDH fields of the header
